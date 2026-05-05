@@ -347,19 +347,19 @@ main{
 
 .card-1 .showcase-card-image,
 .card-5 .showcase-card-image {
-  height: 27.14vh;
-  width: 10.6vw;
+  height: 29.14vh;
+  width: 11.6vw;
 }
 
 .card-2 .showcase-card-image,
 .card-4 .showcase-card-image {
-  height: 34.55vh;
-  width: 15.5vw;
+  height: 36.55vh;
+  width: 16.5vw;
 }
 
 .card-3 .showcase-card-image {
-  height: 42.88vh;
-  width: 20.5vw;
+  height: 44.88vh;
+  width: 21.5vw;
 }
 
 .showcase-card-text {
