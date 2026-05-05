@@ -17,7 +17,6 @@ main{
 
 .container{
   width: 89vw;
-  margin: 0 auto;
 }
 
 .slider {
@@ -126,7 +125,7 @@ main{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 70px;
+  padding: 20px 0px;
   width: 89vw;
   align-items: center;
   gap: 40px;
@@ -142,9 +141,9 @@ main{
 .about-us-image-1,
 .about-us-image-2{
   flex: 1;
-  min-height: 41.67vh;
+  min-height: 58.67vh;
   
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -160,15 +159,14 @@ main{
 .about-us-image-3 {
   background-image: url('src/cms-img.png');
   flex: 1;
-  min-height: 62.5vh;
+  min-height: 79.5vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Products Section */
 .products-section {
-    padding: 80px 50px;
+    padding: 80px 0px;
     width: 89vw;
 }
 
@@ -213,7 +211,7 @@ main{
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18.23vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16.20vw, 1fr));
     gap: 32px;
 }
 
@@ -385,7 +383,7 @@ main{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 70px;
+  padding: 20px 0px;
   width: 89vw;
   align-items: end;
   gap: 80px;
@@ -519,4 +517,56 @@ main{
   to {
     transform: translate3d(-50%, 0, 0);
   }
+}
+
+.blog-section {
+  padding: 80px 0px;
+  width: 89vw;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.blog-title {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Instrument Serif', serif;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.23vw, 1fr));
+  gap: 32px;
+}
+
+.blog-card {
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 42vh;
+  overflow: hidden;
+  background: var(--secondary-color);
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-image img {
+  transform: scale(1.05);
 }
