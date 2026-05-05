@@ -84,10 +84,33 @@ main{
 
   background-color: black;
   color: white;
-
+  border: 1px solid transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
+  font-weight: 500;
   white-space: nowrap;
   gap: 8px;
+
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('src/shop-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button1:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+.button1:hover .button-icon {
+  background-image: url('src/shop-icon-black.svg');
 }
 
 .categories {
@@ -122,7 +145,12 @@ main{
   height: 20px;
   flex: 0 0 20px;
   color: white;
-  padding: 0px 5px;
+  padding: 0px 9px;
+  transform: rotate(-11deg);
+  -webkit-transform: rotate(-11deg);
+  -moz-transform: rotate(-11deg);
+  -ms-transform: rotate(-11deg);
+  -o-transform: rotate(-11deg);
 }
 
 .about-us{
@@ -144,7 +172,7 @@ main{
 .about-us-image-1,
 .about-us-image-2{
   flex: 1;
-  min-height: 520px;
+  min-height: 770px;
   
   background-size: cover;
   background-position: center;
@@ -237,7 +265,7 @@ main{
 
 .product-image {
     width: 100%;
-    height: 320px;
+    height: 430px;
     overflow: hidden;
     background: var(--secondary-color);
 }
@@ -356,19 +384,19 @@ main{
 
 .card-1 .showcase-card-image,
 .card-5 .showcase-card-image {
-  height: 220px;
-  width: 170px;
+  height: 250px;
+  width: 220px;
 }
 
 .card-2 .showcase-card-image,
 .card-4 .showcase-card-image {
-  height: 280px;
-  width: 240px;
+  height: 310px;
+  width: 300px;
 }
 
 .card-3 .showcase-card-image {
-  height: 340px;
-  width: 310px;
+  height: 440px;
+  width: 380px;
 }
 
 .showcase-card-text {
@@ -441,7 +469,7 @@ main{
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
   background-color: black;
@@ -484,9 +512,10 @@ main{
 .marquee__inner {
   display: flex;
   width: max-content;
-  animation: marquee 18s linear infinite;
+  animation: marquee 9s linear infinite;
   will-change: transform;
   transform: translate3d(0, 0, 0);
+  -webkit-animation: marquee 28s linear infinite;
 }
 
 .marquee__group {
@@ -588,7 +617,6 @@ main{
   transform: scale(1.05);
 }
 
-/* TOP TRENDING SPLIT SECTION */
 .trending-split-section {
   width: 89vw;
   display: flex;
